@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#247BA0" />
+  <meta name="description" content="Record Scripture in your family's voices, verse by verse. Listen together. Pass down a sacred audio heirloom for generations." />
+
+  <title>Family Bible App — Scripture in the voices you love</title>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Family Bible App" />
+  <meta property="og:title" content="Family Bible App — Scripture in the voices you love" />
+  <meta property="og:description" content="A collaborative family audio Bible. Record verses in your own voice and listen together — a sacred heirloom for generations." />
+  <meta property="og:url" content="https://familybibleapp.com/" />
+  <meta property="og:image" content="https://familybibleapp.com/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Family Bible App — Scripture in the voices you love" />
+  <meta name="twitter:description" content="Record Scripture together, one verse at a time. A family audio Bible heirloom." />
+  <meta name="twitter:image" content="https://familybibleapp.com/images/og-image.png" />
+
+  <link rel="icon" type="image/png" href="images/app-icon.png" />
+  <link rel="apple-touch-icon" href="images/app-icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css?v=2" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__brand">
+        <img src="images/app-icon.png" alt="" width="40" height="40" />
+        Family Bible
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <a href="https://familybibleapp.web.app/auth" class="nav__cta">
+        Open the App
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+      </a>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <a href="#story">Our Story</a>
+    <a href="#features">Features</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#contact">Contact</a>
+    <a href="https://familybibleapp.web.app/auth">Open the App</a>
+  </nav>
+
+  <main>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="top">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__grid">
+
+        <div class="hero__content">
+          <div class="hero__eyebrow">A sacred audio heirloom for your family</div>
+
+          <h1 class="hero__title">
+            Leave a Legacy of Scripture for your family <em>forever</em>
+          </h1>
+
+          <p class="hero__subtitle">
+            Record the Bible verse by verse in your own voice. Listen to entire chapters stitched together across your family — Mom, Dad, Grandma — like a podcast of the people who matter most.
+          </p>
+
+          <div class="hero__actions">
+            <a href="https://familybibleapp.web.app/auth" class="btn btn--primary">
+              Start Your Family Bible
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6"/></svg>
+            </a>
+            <a href="#how-it-works" class="btn btn--ghost">See how it works</a>
+          </div>
+
+          <div class="hero__trust">
+            <span>
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+              Start for Free
+            </span>
+            <span>
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+              Private &amp; secure
+            </span>
+            <span>
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+              Any device
+            </span>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__glow" aria-hidden="true"></div>
+
+          <div class="voice-chip voice-chip--1">
+            <span class="voice-chip__dot"></span> Mom · John 3:16
+          </div>
+          <div class="voice-chip voice-chip--2">
+            <span class="voice-chip__dot"></span> Dad · Psalm 23
+          </div>
+          <div class="voice-chip voice-chip--3">
+            <span class="voice-chip__dot"></span> Grandma · Romans 8
+          </div>
+
+          <div class="cassette" aria-hidden="true">
+            <div class="cassette__label">
+              <div class="cassette__ref">Genesis 1 : 1 – 5</div>
+              <div class="cassette__title">FAMILY BIBLE</div>
+            </div>
+            <div class="cassette__body">
+              <div class="cassette__wave">
+                <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+                <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+              </div>
+              <div class="cassette__reels">
+                <div class="reel"></div>
+                <div class="cassette__record"></div>
+                <div class="reel"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══ SACRED ECHO ═══ -->
+    <section class="section" id="story">
+      <div class="container echo reveal">
+        <div class="echo__text">
+          <span class="section__eyebrow">Sacred Echo</span>
+          <h2 class="section__title">A spiritual home you can hear</h2>
+          <p class="section__subtitle">
+            The Family Bible App is an audio heirloom of Scripture — keeping relationships strong and preserving the voices of the ones you love long after the moment has passed.
+          </p>
+          <p class="section__subtitle">
+            Each person records passages, and the app indexes every reading by book, chapter, and verse. Shareable links, guided plans, and verse-by-verse playback in the voices you know best. Build something sacred, personal, and private — wisdom that's always with you, ready to pass down.
+          </p>
+          <p class="echo__quote">"The deepest wisdom, in the voices that shaped you."</p>
+        </div>
+
+        <div class="echo__visual">
+          <div class="echo__visual-inner">
+            <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/>
+            </svg>
+            <p>Record. Listen. Pass it on — one verse at a time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ THREE PILLARS ═══ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">The Experience</span>
+          <h2 class="section__title">Record. Listen. Together.</h2>
+          <p class="section__subtitle">Three simple acts that compound into a legacy your grandchildren will treasure.</p>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar reveal">
+            <div class="pillar__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+            </div>
+            <div class="pillar__num">01 — Record</div>
+            <h3 class="pillar__title">Your voice, verse by verse</h3>
+            <p class="pillar__text">Pick any passage and record on a beautiful cassette-style interface. Smart "where to start" logic picks up where you left off. Review each verse before sharing.</p>
+          </article>
+
+          <article class="pillar reveal">
+            <div class="pillar__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z"/></svg>
+            </div>
+            <div class="pillar__num">02 — Listen</div>
+            <h3 class="pillar__title">Chapters that flow like a podcast</h3>
+            <p class="pillar__text">Open a chapter and hear it stitched continuously across every family member. Filter by reader, resume where you left off, and trim silence for tight playback.</p>
+          </article>
+
+          <article class="pillar reveal">
+            <div class="pillar__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/></svg>
+            </div>
+            <div class="pillar__num">03 — Together</div>
+            <h3 class="pillar__title">A family project that grows</h3>
+            <p class="pillar__text">Invite grandparents, siblings, and cousins. Track collective Bible coverage, follow guided plans, share study notes, and celebrate streaks together.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FEATURES ═══ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Everything you need</span>
+          <h2 class="section__title">Built for real families</h2>
+          <p class="section__subtitle">Not another Bible app — a personal, voice-based heirloom with thoughtful features at every step.</p>
+        </div>
+
+        <div class="features">
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+            </div>
+            <h3 class="feature__title">Full Bible, two translations</h3>
+            <p class="feature__text">World English Bible and Berean Standard Bible — all 66 books, every verse. Choose your preferred translation for reading and recording.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+            </div>
+            <h3 class="feature__title">Guided Bible plans</h3>
+            <p class="feature__text">Follow structured recording and listening plans with progress tracking. Build habits that lead to a complete family audio Bible over time.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+            </div>
+            <h3 class="feature__title">Family study notes</h3>
+            <p class="feature__text">Add verse-level notes with comments your whole family can see. Share insights, questions, and reflections as you grow together.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <h3 class="feature__title">Badges &amp; streaks</h3>
+            <p class="feature__text">Celebrate milestones and maintain recording streaks. A dashboard keeps everyone motivated and shows how far your family has come.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+            </div>
+            <h3 class="feature__title">Shareable links</h3>
+            <p class="feature__text">Invite family members with polished link previews. Every new voice strengthens your collective audio Bible and deepens connection.</p>
+          </article>
+
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            </div>
+            <h3 class="feature__title">Private by design</h3>
+            <p class="feature__text">Your family's recordings stay within your family group. Secure authentication, encrypted storage, and admin controls you can trust.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ HOW IT WORKS ═══ -->
+    <section class="section section--alt" id="how-it-works">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">Simple to start</span>
+          <h2 class="section__title">Three steps to your family Bible</h2>
+          <p class="section__subtitle">No complicated setup. Create a family, invite your people, and start recording today.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step reveal">
+            <div class="step__num">1</div>
+            <h3 class="step__title">Create your family</h3>
+            <p class="step__text">Sign up free, start a family group, and invite the people you love with a simple link.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">2</div>
+            <h3 class="step__title">Record a passage</h3>
+            <p class="step__text">Choose any book and chapter. Read verse by verse on the cassette recorder — even just one verse counts.</p>
+          </div>
+          <div class="step reveal">
+            <div class="step__num">3</div>
+            <h3 class="step__title">Listen together</h3>
+            <p class="step__text">Press play on any chapter and hear your family's voices weave together into something extraordinary.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SCRIPTURE ═══ -->
+    <section class="section">
+      <div class="container reveal">
+        <blockquote class="scripture">
+          <span class="scripture__ref">Deuteronomy 6:6–7</span>
+          <p class="scripture__text">
+            "These commandments that I give you today are to be on your hearts.
+            <strong>Impress them on your children.</strong>
+            Talk about them when you sit at home and when you walk along the road, when you lie down and when you get up."
+          </p>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- ═══ GENERATIONS ═══ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__eyebrow">For every generation</span>
+          <h2 class="section__title">Why families choose us</h2>
+        </div>
+
+        <div class="generations">
+          <article class="gen-card reveal">
+            <div class="gen-card__emoji" aria-hidden="true">💛</div>
+            <h3 class="gen-card__title">A voice they'll never forget</h3>
+            <p class="gen-card__text">Hearing a grandparent read Psalm 23 creates a bond that text alone cannot. Preserve those voices while you still can.</p>
+          </article>
+          <article class="gen-card reveal">
+            <div class="gen-card__emoji" aria-hidden="true">🌙</div>
+            <h3 class="gen-card__title">Bedtime that matters</h3>
+            <p class="gen-card__text">Replace screen time with Scripture in Mom and Dad's voices. Audio makes God's Word accessible at every age and reading level.</p>
+          </article>
+          <article class="gen-card reveal">
+            <div class="gen-card__emoji" aria-hidden="true">🏡</div>
+            <h3 class="gen-card__title">Families spread apart</h3>
+            <p class="gen-card__text">Grandparents across the country, cousins in different states — everyone contributes to one shared audio Bible.</p>
+          </article>
+          <article class="gen-card reveal">
+            <div class="gen-card__emoji" aria-hidden="true">✨</div>
+            <h3 class="gen-card__title">A legacy that compounds</h3>
+            <p class="gen-card__text">Each verse recorded is a gift to the next generation. Over months and years, your family builds something truly one of a kind.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ FINAL CTA ═══ -->
+    <section class="section">
+      <div class="container reveal">
+        <div class="cta-band">
+          <div class="cta-band__inner">
+            <div class="cta-band__icon">
+              <img src="images/app-icon.png" alt="" width="48" height="48" />
+            </div>
+            <h2 class="cta-band__title">Begin your family's audio Bible today</h2>
+            <p class="cta-band__text">
+              Join families building a sacred heirloom — one verse, one voice, one generation at a time. Free to start. No credit card required.
+            </p>
+            <div class="cta-band__actions">
+              <a href="https://familybibleapp.web.app/auth" class="btn btn--primary">Create Your Free Account</a>
+              <a href="https://familybibleapp.web.app" class="btn btn--ghost">Open the App</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <div class="footer__brand">
+            <img src="images/app-icon.png" alt="" width="36" height="36" />
+            Family Bible App
+          </div>
+          <p class="footer__tagline">Record Scripture together, one verse at a time. A collaborative audio Bible for families who want to pass down more than words.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Product</h4>
+          <ul class="footer__links">
+            <li><a href="https://familybibleapp.web.app/auth">Get Started</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Connect</h4>
+          <ul class="footer__links">
+            <li><a href="mailto:hello@familybibleapp.com">hello@familybibleapp.com</a></li>
+            <li><a href="https://familybibleapp.web.app">Open Web App</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 Family Bible App. All rights reserved.</span>
+        <span>Scripture from WEB &amp; BSB (public domain)</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

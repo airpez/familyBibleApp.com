@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#247BA0" />
+  <meta name="robots" content="noindex" />
+  <title>Checkout — Family Bible App</title>
+
+  <link rel="icon" type="image/png" href="images/app-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
+</head>
+<body>
+
+  <header class="nav scrolled" id="nav">
+    <div class="container nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img src="images/app-icon.png" alt="" width="40" height="40" />
+        Family Bible
+      </a>
+      <a href="pricing.html" class="nav__cta">← Back to plans</a>
+    </div>
+  </header>
+
+  <main class="checkout-page">
+    <div class="container checkout-page__inner">
+
+      <div class="checkout-card reveal">
+        <div class="checkout-card__header">
+          <img src="images/app-icon.png" alt="" width="48" height="48" class="checkout-card__icon" />
+          <h1 class="checkout-card__title">Complete your subscription</h1>
+          <p class="checkout-card__subtitle">Secure checkout powered by Stripe</p>
+        </div>
+
+        <div class="checkout-summary">
+          <div>
+            <p class="checkout-summary__label">Selected plan</p>
+            <p class="checkout-summary__name" id="checkout-plan-name">Family Legacy</p>
+          </div>
+          <div class="checkout-summary__price">
+            <span id="checkout-plan-price">$89</span>
+            <span id="checkout-plan-period">/ year</span>
+          </div>
+        </div>
+
+        <form id="checkout-form" class="checkout-form">
+          <label class="checkout-label" for="checkout-email">Email address</label>
+          <input
+            type="email"
+            id="checkout-email"
+            class="checkout-input"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          />
+          <p class="checkout-hint">Use the same email you'll sign in with in the app.</p>
+
+          <p id="checkout-error" class="checkout-error" hidden></p>
+
+          <button type="submit" id="checkout-submit" class="btn btn--primary checkout-submit">
+            Continue to secure payment
+          </button>
+
+          <p id="checkout-loading" class="checkout-loading" hidden>Redirecting to Stripe…</p>
+        </form>
+
+        <div class="checkout-trust">
+          <span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            Encrypted &amp; secure
+          </span>
+          <span>
+            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+            Card details on Stripe
+          </span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="js/stripe-config.js"></script>
+  <script src="js/checkout.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
