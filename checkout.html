@@ -5,13 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#247BA0" />
   <meta name="robots" content="noindex" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
   <title>Checkout — Family Bible App</title>
 
   <link rel="icon" type="image/png" href="images/app-icon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=3" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
 </head>
 <body>
 
@@ -38,10 +41,10 @@
         <div class="checkout-summary">
           <div>
             <p class="checkout-summary__label">Selected plan</p>
-            <p class="checkout-summary__name" id="checkout-plan-name">Family Legacy</p>
+            <p class="checkout-summary__name" id="checkout-plan-name">—</p>
           </div>
           <div class="checkout-summary__price">
-            <span id="checkout-plan-price">$89</span>
+            <span id="checkout-plan-price">—</span>
             <span id="checkout-plan-period">/ year</span>
           </div>
         </div>
@@ -82,8 +85,8 @@
     </div>
   </main>
 
-  <script src="js/stripe-config.js"></script>
-  <script src="js/checkout.js"></script>
-  <script src="js/main.js"></script>
+  <script src="js/stripe-config.js?v=4"></script>
+  <script src="js/checkout.js?v=4"></script>
+  <script src="js/main.js?v=4"></script>
 </body>
 </html>

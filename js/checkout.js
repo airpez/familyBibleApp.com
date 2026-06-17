@@ -2,11 +2,6 @@
   'use strict';
 
   var config = window.STRIPE_CONFIG;
-  if (!config) return;
-
-  var params = new URLSearchParams(window.location.search);
-  var planKey = params.get('plan') || 'legacy';
-  var plan = config.plans[planKey];
 
   var els = {
     planName: document.getElementById('checkout-plan-name'),
@@ -19,14 +14,37 @@
     loading: document.getElementById('checkout-loading'),
   };
 
-  if (!plan) {
-    window.location.href = 'pricing.html';
-    return;
+  function getPlanFromUrl() {
+    var planKey = new URLSearchParams(window.location.search).get('plan') || 'legacy';
+    if (!config || !config.plans || !config.plans[planKey]) {
+      return null;
+    }
+    return { planKey: planKey, plan: config.plans[planKey] };
   }
 
-  if (els.planName) els.planName.textContent = plan.name;
-  if (els.planPrice) els.planPrice.textContent = plan.price;
-  if (els.planPeriod) els.planPeriod.textContent = plan.period;
+  function applyPlan() {
+    if (!config) {
+      showError('Checkout configuration failed to load. Hard refresh and try again.');
+      return false;
+    }
+
+    var selected = getPlanFromUrl();
+    if (!selected) {
+      window.location.replace('pricing.html');
+      return false;
+    }
+
+    if (els.planName) els.planName.textContent = selected.plan.name;
+    if (els.planPrice) els.planPrice.textContent = selected.plan.price;
+    if (els.planPeriod) els.planPeriod.textContent = selected.plan.period;
+
+    if (els.error && els.error.textContent.indexOf('configuration') === -1) {
+      els.error.hidden = true;
+    }
+    setLoading(false);
+
+    return true;
+  }
 
   function showError(msg) {
     if (!els.error) return;
@@ -39,10 +57,30 @@
     if (els.loading) els.loading.hidden = !loading;
   }
 
+  // Run on every show — fixes back/forward cache keeping the first plan
+  function init() {
+    applyPlan();
+  }
+
+  init();
+
+  window.addEventListener('pageshow', function (event) {
+    if (event.persisted) {
+      init();
+    }
+  });
+
   if (els.form) {
     els.form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (els.error) els.error.hidden = true;
+
+      var selected = getPlanFromUrl();
+      if (!selected) {
+        showError('Invalid plan. Please choose again from the pricing page.');
+        return;
+      }
+
       setLoading(true);
 
       var email = els.email ? els.email.value.trim() : '';
@@ -51,8 +89,8 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          plan: planKey,
-          productId: plan.productId,
+          plan: selected.planKey,
+          productId: selected.plan.productId,
           email: email || undefined,
           successUrl: config.successUrl,
           cancelUrl: config.cancelUrl,
